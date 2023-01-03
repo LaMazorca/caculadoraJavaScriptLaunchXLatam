@@ -1,0 +1,93 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    background-color: #b9bfb0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #08A689;
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+footer > p {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    margin: .5rem;
+    padding: 0;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    border: none;
+    background-color: rgba(13, 13, 13, .7);
+    color: #04D9B2;
+    box-shadow: .5rem .5rem 1rem -.3rem #b9bfb040, -.5rem -.5rem 1.6rem .3rem #08A6891f;
+}
+
+button:active {
+    background-color: rgb(13, 13, 13);;
+}
+
+button:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 1.5rem;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 7.5rem);
+    grid-template-rows: 16rem repeat(5, 7.5rem);
+    background-color:  #165946;
+    padding: 1.6rem;
+    border-radius: 3rem;
+    box-shadow: 1.6rem 1rem .5rem .5rem #0D0D0D33;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    padding: 1.6rem;
+    margin: 1rem 1rem 2rem;
+    align-items: flex-end;
+    background-color: #0d0d0d;
+    border-radius: 3rem;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0rem 0rem 0rem 1rem #b9bfb033;
+}
+
+
+#previous-value, #current-value  {
+    color: #b9bfb0;
+}
+
+#previous-value {
+    font-size: 4rem;
+}
+
+#current-value {
+    font-size: 2.5rem;
+}
